@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Bienvenida</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container fade-in">
+    <div class="welcome-text">
+      <h1>Bienvenido, selecciona tu idioma.</h1>
+      <h1>Welcome, select your language.</h1>
+      <h1>ברוך הבא, בחר את שפתך.</h1>
+      <h1>Bienvenue, sélectionnez votre langue.</h1>
+    </div>
+
+    <div class="buttons">
+      <button onclick="openLink('es')">Español</button>
+      <button onclick="openLink('en')">English</button>
+      <button onclick="openLink('he')">עברית</button>
+      <button onclick="openLink('fr')">Français</button>
+    </div>
+  </div>
+
+  <script>
+    function openLink(lang) {
+      // 🔗 Sustituye los '#' por los enlaces reales cuando los tengas
+      const links = {
+        es: '#', 
+        en: '#',
+        he: '#',
+        fr: '#'
+      };
+      window.location.href = links[lang];
+    }
+  </script>
+</body>
+</html>
